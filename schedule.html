@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b936fa34eb.js" crossorigin="anonymous"></script>
+    <title>Schedule</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <nav class="flex-container">
+        <img src="Pleiades_Logo.svg" alt="Pleiades Logo" class="logo">
+        <a> UNC PLEIADES</a>
+        <a href="https://opal.ils.unc.edu/~cgs22/Assignment%205/home.html">About</a>
+        <a href="https://opal.ils.unc.edu/~cgs22/Assignment%205/schedule.html">Schedule</a>
+        <a href="https://opal.ils.unc.edu/~cgs22/Assignment%205/rosters.html">Rosters</a>
+    </nav>
+    <div class="schedule-wrapper">
+        <header>
+            <div class="schedule-description">
+              <h1>2023-2024 Tournament Schedule</h1>
+              <p>The college ultimate season takes place over the course of the academic year, beginning in the fall and ending in the spring. UNC Pleiades generally treats the Fall season as a period of growth and development for the team where the team attends fewer and less competitive tournaments.  The competitive season is in the spring which culminates with the USAU D1 College Championship Series. Pleiades competes in North Carolina Conferences, Atlantic Coast Regionals, and then Nationals. Only select teams move on from Sectionals to Regionals, and even fewer from Regionals to Nationals, where 20 teams from across the country compete for the National Championship in each division.</p>
+          </div>
+        </header>
+        <div class="schedule-content-wrapper">
+          <section>
+            <h2>2023 Fall</h2>
+            <p>Bare Bones | Charlotte, NC | 10/7 – 10/8</p>
+            <p>Blue Ride Finale | Axton, VA | 11/3 – 11/4</p>
+            <p>Alumni Weekend | Chapel Hill, NC | 11/11 – 11/12</p>
+          </section>
+          <section>
+            <h2>2024 Spring</h2>
+            <p>Carolina Kickoff | Chapel Hill, NC | 1/20 – 1/21</p>
+            <p>Queen City Tune Up | Charlotte, NC | 2/10 – 2/11</p>
+            <p>Commonwealth Cup | Axton, VA | / 2/24 – 2/25 </p>
+            <p>Stanford Invite | Stanford, CA | 3/8 – 3/10</p>
+            <p>North Carolina Conferences | Bermuda Run, NC | 4/13 – 4/14</p>
+            <p>Atlantic Coast Regionals | Axton, VA | 5/4 – 5/5</p>
+            <p>College National Championships | Location TBD | 5/24 – 5/27</p>
+          </section>
+        </div>
+
+        <div class = "slideshow">
+        <h2>Slideshow of Current Season Highlights!</h2>
+        <p>Photos from Fall 2023 Tournaments: Bare Bones and Blue Ridge Finale</p>
+          <div class = "w3-content w3-display-container">
+            <img class = "mySlides" src="claudia.jpg" alt="Pleiades cheers before the start of a game">
+            <img class = "mySlides" src="abby.jpg" alt="Abby Stevens runs through a tunnel of teammates">
+            <img class = "mySlides" src="jess.jpg" alt="Jess Wu lays out to make a catch">
+            <img class = "mySlides" src="erica.jpg" alt="Erica Birdsong skys the defender">
+            <img class = "mySlides" src="rae.jpg" alt="Rachel Yao highfives teammates">
+            <img class = "mySlides" src="rachel.jpg" alt="Rachel Gordon gets a run through block">
+            <img class = "mySlides" src="martha.jpg" alt="Pleiades celebrates a goal">
+            <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+          </div>
+        </div>
+    </div>
+    
+    <footer>
+      <nav class="flex container">
+        <a href="https://www.instagram.com/uncpleiades/"><i class="fa-brands fa-square-instagram fa-2xl"></i>Instagram</a>
+        <a href="https://twitter.com/UNC_Pleiades"><i class="fa-brands fa-square-x-twitter fa-2xl"></i>Twitter</a>
+        <a href="https://www.facebook.com/unc.pleiades/"><i class="fa-brands fa-square-facebook fa-2xl"></i>Facebook</a>
+        <a href="https://www.youtube.com/@uncpleiades9016"><i class="fa-brands fa-square-youtube fa-2xl"></i>YouTube</a>
+        <a href="mailto:unc.pleiades@gmail.com"><i class="fa-solid fa-envelope fa-2xl"></i>Gmail</a>
+      </nav>
+      <p>Images courtsey of Aayas Joshi and Brent Russell</p>
+    </footer> 
+  <script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+      
+    function plusDivs(n) {
+      showDivs(slideIndex += n); 
+    }
+      
+    function showDivs (n) {
+      var i;
+      var x = document.querySelectorAll(".mySlides");
+      
+      if (n > x.length)
+        {slideIndex = 1}
+      if (n < 1)
+        {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      
+      x[slideIndex-1].style.display = "block";
+    }
+  </script>
+</body>
+</html>
